@@ -1,0 +1,13 @@
+site:
+  title: WOOL Platform Documentation
+  url: https://www.woolplatform.eu/docs/
+  start_page: language-docs::index.adoc
+  robots: allow
+content:
+  sources:
+  - url: https://github.com/woolplatform/wool-documentation.git
+    start_path: language-docs
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/master/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true

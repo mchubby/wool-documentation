@@ -2,7 +2,7 @@
 :toc: left
 :toc-title: Table of Contents
 :toclevels: 3
-:imagesdir: ./images
+:imagesdir: ../images
 :sectnums:
 Harm op den Akker <hopdenakker@innovationsprint.eu>
 :description: The document's description.
