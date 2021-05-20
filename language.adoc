@@ -1,0 +1,11 @@
+= WOOL Language Documentation =
+
+== Basics & Terms ==
+A WOOL dialogue definition is essentially a definition of a series of dialogue steps (that we refer to as nodes) linked together through user replies.
+
+We define the following terms:
+
+* Node - A dialogue step that contains one Statement and a one or more Replies.
+* Statement - Something an agent says.
+* Reply - A possible reply that a user of the system can give.
+* Agent - A virtual speaker within a dialogue.
