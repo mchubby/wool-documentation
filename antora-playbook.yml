@@ -1,7 +1,7 @@
 site:
   title: WOOL Platform Documentation
   url: https://www.woolplatform.eu/docs/
-  start_page: language-docs::index.adoc
+  start_page: main-component::index.adoc
   robots: allow
 content:
   sources:
