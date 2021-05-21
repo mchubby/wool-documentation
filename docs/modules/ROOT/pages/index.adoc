@@ -9,4 +9,5 @@ Welcome to the WOOL Platform Documentation Hub. On this site you will find docum
 This site is currently under active development, and was last updated on May 21st, 2021.
 
 While other content is being added, please take a look at the available information below:
+
  * xref:language:index.adoc[WOOL Language Documentation]
