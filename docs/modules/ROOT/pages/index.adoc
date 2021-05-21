@@ -1,13 +1,7 @@
 = WOOL Platform Documentation
-:toc: left
-:toc-title: Table of Contents
-:toclevels: 3
 :imagesdir: ../images
 :sectnums:
 Harm op den Akker <hopdenakker@innovationsprint.eu>
 :description: The document's description.
 
-Welcome to the WOOL Platform Documentation Hub.
-
-== Header
-Paragraph.
+Welcome to the WOOL Platform Documentation Hub. On this site you will find documentation about the WOOL Platform, including the WOOL Language and the various available tools. This site is currently under development.
