@@ -4,4 +4,9 @@
 Harm op den Akker <hopdenakker@innovationsprint.eu>
 :description: The document's description.
 
-Welcome to the WOOL Platform Documentation Hub. On this site you will find documentation about the WOOL Platform, including the WOOL Language and the various available tools. This site is currently under development.
+Welcome to the WOOL Platform Documentation Hub. On this site you will find documentation about the WOOL Platform, including the WOOL Language and the various available tools.
+
+This site is currently under active development, and was last updated on May 21st, 2021.
+
+While other content is being added, please take a look at the available information below:
+ * xref:language:index.adoc[WOOL Language Documentation]
