@@ -3,4 +3,4 @@ title: WOOL Platform
 version: dev
 nav:
 - modules/ROOT/nav.adoc
-- modules/module-one/nav.adoc
+- modules/language/nav.adoc

@@ -1,1 +1,1 @@
-* xref:language.adoc[WOOL Language]
+* xref:index.adoc[WOOL Language]
