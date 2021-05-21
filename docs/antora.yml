@@ -1,5 +1,5 @@
-name: language
-title: Language
+name: wool-platform
+title: WOOL Platform
 version: dev
 nav:
 - modules/ROOT/nav.adoc
