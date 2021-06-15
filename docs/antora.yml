@@ -4,3 +4,4 @@ version: dev
 nav:
 - modules/ROOT/nav.adoc
 - modules/language/nav.adoc
+- modules/java-editor/nav.adoc
