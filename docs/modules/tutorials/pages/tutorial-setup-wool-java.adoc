@@ -1,0 +1,10 @@
+= Tutorial: Setting up WOOL for your Java project
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: The document's description.
+
+This tutorial covers setting up your own Java program, including the WOOL Java library, and verifying that everything works correctly. This tutorial assumes a basic understanding of Java and will use the IntelliJ IDEA (version 2019.3.4), although you can use your IDE of choice.
