@@ -171,7 +171,7 @@ Hello, how are you?
 === Basic Statements with Variables
 You can use variables within your *Statements*. Variables start with a `$`-sign, followed by one of `A-Z a-z` and then any number of `a-z A-Z 0-9` or `_` (underscores).
 
-In short: variables names start with a letter, then contain letters, numbers or underscores, for example:</p>
+In short: variables names start with a letter, then contain letters, numbers or underscores, for example:
 
  * `$variableName`
  * `$variable_name`
