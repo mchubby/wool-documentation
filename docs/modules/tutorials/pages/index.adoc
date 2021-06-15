@@ -16,5 +16,5 @@ On this page we list tutorials that are available for the WOOL Platform.
 
 == Java Tutorials
 
- * <<tutorial-setup-wool-java,Setting up WOOL for your Java project>>. — Beginner tutorial on setting up a simple Java project in IntelliJ and using your first WOOL functions.
+ * xref:tutorial-setup-wool-java.adoc[Setting up WOOL for your Java project]. — Beginner tutorial on setting up a simple Java project in IntelliJ and using your first WOOL functions.
  * Setting up the WOOL Web Service. — Beginner tutorial that explains how to set up the Web Service, create new user accounts and add dialogues.
