@@ -18,7 +18,7 @@ In short, if you want to generate the WOOL Documentation yourself:
  - Run `antora --fetch antora-playbook.yml`
  - This will generate the `/build/` folder, in which you can find `/build/site/index.html` which is the entry-point for the documentation.
 
-Alternatively, if you are writing new documentation, you may use the antora-playbook-author-mode.yml to use the local repository contents for generating the documentation, without having to commit work-in-progress documentation.
+Alternatively, if you are writing new documentation, you may use the `antora-playbook-author-mode.yml` file to use the local repository contents for generating the documentation, without having to commit work-in-progress documentation (see https://docs.antora.org/antora/2.1/playbook/author-mode/).
 
 ## Antora "WOOL" UI
 The /wool-ui/ folder contains the source for generating the WOOL UI Bundle, which is a fork of the Antora Default UI (https://gitlab.com/antora/antora-ui-default).
