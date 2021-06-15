@@ -1,7 +1,7 @@
 name: wool-platform
 title: WOOL Platform
 version: dev
-nav:s
+nav:
 - modules/language/nav.adoc
 - modules/java-editor/nav.adoc
 - modules/tutorials/nav.adoc
