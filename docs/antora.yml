@@ -5,3 +5,4 @@ nav:
 - modules/ROOT/nav.adoc
 - modules/language/nav.adoc
 - modules/java-editor/nav.adoc
+- modules/tutorials/nav.adoc
