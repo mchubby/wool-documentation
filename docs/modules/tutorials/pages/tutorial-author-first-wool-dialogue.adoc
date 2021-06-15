@@ -1,4 +1,4 @@
-= Tutorial: Authoring your first WOOL dialogue
+= Tutorial: How to author your first WOOL dialogue
 :toc: left
 :toc-title: Table of Contents
 :toclevels: 3
