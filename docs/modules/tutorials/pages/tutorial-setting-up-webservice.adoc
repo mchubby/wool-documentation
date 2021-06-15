@@ -1,0 +1,10 @@
+= Tutorial: Setting up the WOOL Web Service
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: The document's description.
+
+In this tutorial you will learn how to set up the WOOL Web Service with your own user account and dialogues.

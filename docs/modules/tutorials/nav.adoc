@@ -1,1 +1,3 @@
 * xref:index.adoc[WOOL Tutorials]
+** xref:tutorial-author-first-wool-dialogue.adoc[How to author your first WOOL dialogue]
+** xref:tutorial-interactive-fiction-game.adoc[How to make a standalone interactive fiction game]

@@ -1,0 +1,10 @@
+= Tutorial: How to make a standalone interactive fiction game
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: The document's description.
+
+This tutorial describes how to make a simple standalone interactive fiction game. You can use the web-based Wool editor. NOTE: for more complex applications involving a Java server or a custom dialogue client, the desktop Wool editor is recommended. It has file management and multi-dialogue support.

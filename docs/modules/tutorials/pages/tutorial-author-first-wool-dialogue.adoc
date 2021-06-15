@@ -1,0 +1,10 @@
+= Tutorial: Authoring your first WOOL dialogue
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: The document's description.
+
+In this tutorial you will learn how to author a basic WOOL dialogue for use in an agent application (e.g. with the Agents United Platform).
