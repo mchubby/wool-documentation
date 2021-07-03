@@ -4,6 +4,8 @@ This repository contains documentation for the WOOL Language in ASCIIDOC format 
 ## Documentation Content
 The actual documentation content can be found in the /docs/ folder, where the different documentation modules can be found.
 
+## DrawIO Source Files
+In the /drawio/ folder, source files for diagrams used in the documentation can be found.
 
 ## WOOL Documentation Antora Playbooks
 This repository also contains two Antora Playbook files for generating the WOOL Documentation site, as well as the UI Bundle, which is a modification of the Antora Default UI.
