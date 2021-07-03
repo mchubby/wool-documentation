@@ -1,5 +1,5 @@
 # WOOL Documentation
-This repository contains documentation for the WOOL Language in ASCIIDOC format (www.asciidoc.org) that can be compiled into the documentation website at https://www.woolplatform.com/docs/ using Antora.
+This repository contains documentation for the WOOL Language in ASCIIDOC format (www.asciidoc.org) that can be compiled into the documentation website at https://www.woolplatform.eu/docs/ using Antora.
 
 ## Documentation Content
 The actual documentation content can be found in the /docs/ folder, where the different documentation modules can be found.
