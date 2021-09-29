@@ -1,6 +1,8 @@
 site:
   title: WOOL Platform Documentation Hub
   url: https://www.woolplatform.eu/docs/
+  keys:
+    google_analytics: 'UA-155670588-1'
   start_page: wool-platform::index.adoc
 content:
   sources:
