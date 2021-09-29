@@ -11,7 +11,7 @@ body {
   color: var(--navbar-font-color);
   font-size: calc(16 / var(--rem-base) * 1rem);
   height: var(--navbar-height);
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   position: fixed;
   top: 0;
@@ -91,7 +91,7 @@ body {
   color: var(--navbar-menu-font-color);
   display: block;
   line-height: var(--doc-line-height);
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .navbar-item.has-dropdown {
@@ -265,11 +265,10 @@ body {
 }
 
 .wool-logo {
-  display: block;
-  background-image: url(../img/wool-logo.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: calc(var(--toolbar-height));
-  width: calc(var(--toolbar-height) * 2);
-  margin: 2px;
+  float: left;
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -9px;
 }
