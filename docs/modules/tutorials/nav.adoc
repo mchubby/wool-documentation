@@ -2,4 +2,5 @@
 ** xref:tutorial-author-first-wool-dialogue.adoc[How to author your first WOOL dialogue]
 ** xref:tutorial-interactive-fiction-game.adoc[How to make a standalone interactive fiction game]
 ** xref:tutorial-setup-wool-java.adoc[Setting up WOOL for your Java project]
-** xref:tutorial-setting-up-webservice.adoc[Setting up the WOOL Web Service]
+** xref:tutorial-webservice-installation.adoc[WOOL Web Service - Installation]
+** xref:tutorial-webservice-gettingstarted.adoc[WOOL Web Service - Getting Started]
