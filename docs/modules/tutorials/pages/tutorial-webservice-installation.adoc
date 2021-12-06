@@ -160,4 +160,4 @@ If you cannot access the Swagger interface or the deployment showed errors, perf
 == What's next?
 Now that you have the WOOL Web Service running, it's time to start using it. As a next step we recommend checking the xref:tutorial-webservice-gettingstarted.adoc[Getting Started Tutorial].
 
-If you found errors or have questions about this tutorial, please consider reporting an issue at https://github.com/woolplatform/wool-documentation or sending an email to info@woolplatform.eu
+NOTE: If you found errors or have questions about this tutorial, please consider reporting an issue at https://github.com/woolplatform/wool-documentation or sending an email to info@woolplatform.eu. Thank you!
