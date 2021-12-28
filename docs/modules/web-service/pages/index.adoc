@@ -1,0 +1,25 @@
+= WOOL Web Service Documentation
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: Documentation for the WOOL Web Service
+
+There will be documentation here about the WOOL Web Service.
+
+== Patch Notes
+
+=== v1.1.0 (December 28th, 2021)
+
+Update v1.1.0 introduces support for an additional way of authenticating with the WOOL Web Service (WWS). Users that are defined in the users.xml configuration file can now be given a _role_ which can either be "user" or "admin" (if you don't specify, the role "user" will be assumed).
+
+When you authenticate with the WOOL Web Service (using the */auth/login* end-point) as a regular "user", nothing changes in the way you interact with the service (hence this is a minor update following the https://semver.org/[semver] convention).
+
+However, when you authenticate as a user that has the "admin" role, you can control dialogues (start, progress, cancel, etc) and data (set and retrieve variables) for any "user" you specify using the optional _woolUserId_ parameters that have been added to all API end-points.
+
+This method of authentication may be used e.g. in a scenario where "clients" don't directly interact with the WWS, but instead connect through a trusted web component that manages a single connection to the WWS (see Figure below).
+
+.The two modes of authentication. Left: multiple clients authenticate directly "as themselves" with the WWS. Right: a trusted server component authenticates as an "admin" user.
+image::wws-user-vs-admin-authentication.png[]

@@ -1,0 +1,38 @@
+= WOOL Projects
+:toc: left
+:toc-title: Table of Contents
+:toclevels: 3
+:imagesdir: ../images
+:sectnums:
+Harm op den Akker <hopdenakker@innovationsprint.eu>
+:description: Documentation about the "WOOL Project", a way to organise various WOOL scripts.
+
+A single .wool script might be all you need for your WOOL Powered application. But once the content offered by your virtual agents is expanding, it becomes important to split your work into several scripts. Additionally, you might want to make your dialogue content available to users that speak different languages.
+
+Defining a "WOOL Project" is the way to organize your various WOOL scripts and various translations into a single manageable collection.
+
+== Basics & Terms
+A WOOL dialogue definition is essentially a definition of a series of dialogue steps (that we refer to as nodes) linked together through user replies.
+
+== WOOL Project Metadata file
+When working with local WOOL projects ...
+
+```xml
+<wool-project name="Generated Test Project" version="1.0.0">
+  <description>Test description.
+
+With multiple lines.</description>
+  <language-map>
+    <language-set>
+      <source-language name="English" code="en"/>
+      <translation-language name="Dutch" code="nl"/>
+      <translation-language name="German (Austria)" code="de-at"/>
+    </language-set>
+    <language-set>
+      <source-language name="Portuguese" code="pt"/>
+      <translation-language name="Spanish (Mexico)" code="es-mx"/>
+      <translation-language name="Xyzonian Made-up Dialect" code="xyz"/>
+    </language-set>
+  </language-map>
+</wool-project>
+```

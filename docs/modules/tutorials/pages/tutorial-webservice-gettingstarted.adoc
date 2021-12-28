@@ -8,7 +8,7 @@ Harm op den Akker <hopdenakker@innovationsprint.eu>
 Tessa Beinema <t.c.beinema@utwente.nl>
 :description: A tutorial for getting started with using the WOOL Web Service.
 
-NOTE: This tutorial was last updated on *December 6th, 2021*.
+NOTE: This tutorial was last updated on *December 28th, 2021*.
 
 The WOOL Web Service is a https://spring.io/projects/spring-boot[JAVA Spring Boot Application] that can be deployed as a web service. It acts as a wrapper around the WOOL Core Library, offering an API that allows you to create client-server dialogue applications.
 
@@ -23,13 +23,14 @@ image::webservice-setup-tutorial-1-swagger.png[]
 === Authenticating
 All API calls are secured and require a valid `X-Auth-Token` to be included in the header of each call. In order to obtain such a token, we must first perform a login.
 
-When installing the WOOL Web Service you have indicated the `woolconfigDataDir`, which is where all configuration and log files are stored. In this folder, you will find a file `users.xml` in which all valid username/password combinations are stored. For the purpose of this tutorial, let's add a test user to this file, like so:
+When installing the WOOL Web Service you have indicated the `woolconfigDataDir`, which is where all configuration and log files are stored. In this folder, you will find a file `users.xml` in which all valid username/password/role combinations are stored. For the purpose of this tutorial, let's add a test user to this file, like so:
 
-  <users>
-	  <user username="test" password="P@ssword!" />
-  </users>
+ <users>
+   <user username="user@example.com" password="p4ssw0rd" role="user" />
+   <user username="admin@example.com" password="super-secure-password-123" role="admin" />
+ </users>
 
-Note that you can edit this `users.xml` file the WOOL Web Service is running, there is no need to re-launch or re-deploy the service.
+Note that you can edit this `users.xml` file while the WOOL Web Service is running, there is no need to re-launch or re-deploy the service.
 
 Next, open the Swagger page and follow these steps:
 
@@ -39,16 +40,16 @@ Next, open the Swagger page and follow these steps:
 * Under `loginParams` fill in the following information:
 
  {
-   "password": "P@ssword!",
+   "password": "p4ssw0rd",
    "tokenExpiration": null,
-   "user": "test"
+   "user": "user@example.com"
  }
 
 * Then, click on *Execute* in the bottom left of the view.
 * Under "Server response", you should see a Code of 200, and a response body that looks like this:
 
  {
-   "user": "test",
+   "user": "user@example.com",
    "token": "eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiaWF0IjoxNjM3MDY4MDk2fQ.62zcI64ZU12piR-73Sn-chbkjblbn9AqXHIic8UFh1SlSMa7p3Aeha_x51rWMllh6Ch_cYwaiXjv-8enmgX0ag"
  }
 
@@ -56,7 +57,7 @@ Next, open the Swagger page and follow these steps:
 * Scroll all the way to the top of the page and find in the top right corner the green button "Authorize".
 * Enter the authentication token here and click *Authorize* (and then *Close*).
 
-We are now authenticated and can start exploring the rest of the API!
+NOTE: We are now authenticated as a regular user (instead of an admin user) and can start exploring the rest of the API. If we were to authenticate as a user with the "admin" role, we would be able to specify an additional _woolUserId_ parameter for each API call. You can use this if you want to communicate with the WOOL Web Service e.g. from one trusted server, which in turns serves multiple "real" end-users.
 
 === Summary of API End-Points
 Before we can start building our own software client that can communicate with the WOOL Web Service, we will explore the functionalities of the API using the Swagger controller.
@@ -85,6 +86,7 @@ In the steps below, we're going to show the series of API calls a client might t
 ** `language` - For now we choose "*en*", and we deal with translations later.
 ** (optional) `time` - The current time, formatted as e.g. 2021-12-06T12:00:00.000. Time info is used for logging purposes.
 ** (optional) `timezone` - The current timezone as a location-based identifier from the tz database. For example Europe/Amsterdam.
+** (optional) `woolUserId` - If authenticated as an "admin" user, use this to specify the "real" end-user for which to start the dialogue.
 * When you've filled in "*basic*" as `dialogueName` and "*en*" as `language` you can click "_Execute_", resulting in the following JSON Response:
 
 .Code Block: JSON Response #1.
@@ -138,7 +140,7 @@ When you are building a Client application, you need to extract this JSON respon
 
 === Selecting a reply (progress-dialogue)
 
-* Next, we want to advance the dialogue by sending the reply "_Nice to meet you Bob._". For this we will unfold the */dialogue/progress-dialogue* end-point, and click on "_Try it out_". Besides the optional `time` and `timezone` variables explained earlier, there are three parameters for this call:
+* Next, we want to advance the dialogue by sending the reply "_Nice to meet you Bob._". For this we will unfold the */dialogue/progress-dialogue* end-point, and click on "_Try it out_". Besides the optional `time`, `timezone`, and `woolUserId` variables explained earlier, there are three parameters for this call:
 ** `loggedDialogueId` - This is the identifier of the current dialogue instance that you've obtained from the previous call to start-dialogue progress-dialogue or back-dialogue. We fill in the value obtained earlier: *LOGGED_DIALOGUE_ID*.
 ** `loggedInteractionIndex` - This is the index of the current interaction in the dialogue, as obtained in the previous call. We fill in: *0*.
 ** `replyId` - The ID of the selected reply. Since we want to say "_Nice to meet you Bob._", we fill in *1* (note that the first `replyId` is "1" and not "0" as is common in listings).
@@ -172,7 +174,7 @@ When you are building a Client application, you need to extract this JSON respon
   }
 }
 ```
-This response is very similar to the previous one (JSON Response #1). The notable difference is that there is only 1 `reply` option, and its `statement` field is empty (`null`). This is what is called an "_Auto-forward Reply_" (see the xref:language:index.adoc[WOOL Language] doc page), and the idea is that the dialogue can "automatically move forward" after some time, or after the user pressed a button (e.g. "Continue").
+This response is very similar to the previous one (JSON Response #1). The notable difference is that there is only 1 `reply` option, and its `statement` field is empty (`null`). This is what is called an "_Auto-forward Reply_" (see the xref:definitions:wool-language.adoc[WOOL Language] doc page), and the idea is that the dialogue can "automatically move forward" after some time, or after the user pressed a button (e.g. "Continue").
 
 === Auto-Forward (progress-dialogue)
 
@@ -330,6 +332,6 @@ As this is the end of the dialogue, the response will not contain anything usefu
 == What's next?
 So now you have a running WOOL Web Service, and you understand how you can use its API as a "Client" to execute a simple WOOL dialogue.
 
-The next tutorial in this series is currently being written... 
+The next tutorial in this series is currently being written...
 
 NOTE: If you found errors or have questions about this tutorial, please consider reporting an issue at https://github.com/woolplatform/wool-documentation or sending an email to info@woolplatform.eu. Thank you!

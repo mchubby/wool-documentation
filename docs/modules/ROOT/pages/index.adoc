@@ -7,9 +7,10 @@ Tessa Beinema <t.c.beinema@utwente.nl>
 
 Welcome to the WOOL Platform Documentation Hub. On this site you will find documentation about the WOOL Platform, including the WOOL Language and the various available tools.
 
-This site is currently under active development, and was last updated on July 1st, 2021.
+This site is currently under active development, and was last updated on December 28th, 2021.
 
 While other content is being added, please take a look at the available information below:
 
- * xref:language:index.adoc[WOOL Language Documentation]
+ * xref:definitions:index.adoc[WOOL Definitions Documentation]
  * xref:tutorials:index.adoc[WOOL Tutorials]
+ * xref:web-service:index.adoc[WOOL Web Service Documentation]

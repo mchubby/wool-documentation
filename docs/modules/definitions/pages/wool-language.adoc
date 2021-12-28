@@ -5,7 +5,7 @@
 :imagesdir: ../images
 :sectnums:
 Harm op den Akker <hopdenakker@innovationsprint.eu>
-:description: The document's description.
+:description: Core documentation about the WOOL Language.
 
 This is the official language documentation for the WOOL Language.
 
