@@ -7,7 +7,7 @@
 Boris van Schooten <b.vanschooten@rrd.nl>
 :description: The document's description.
 
-This tutorial describes how to make a simple standalone interactive fiction game. You can use http://www.woolplatform.eu/editor/wooleditor/app/[the web-based Wool editor]. 
+This tutorial describes how to make a simple standalone interactive fiction game. You can use http://www.woolplatform.eu/editor/wooleditor/app/[the web-based Wool editor].
 
 _NOTE: for more complex applications involving a Java server or a custom dialogue client, the desktop Wool editor is recommended. It has file management and multi-dialogue support._
 
@@ -22,7 +22,7 @@ image::interactive-fiction-wooleditor.png[]
 
 First, you have to fill in the Speaker field. This is used when in a dialogue with a character in your story.  If you do not want a dialogue, but want to describe a location with associated actions from the player, fill in +Narrator+.
 
-The Wool language supports multiple choice actions, text input, variables, and conditionals. For a full specification, see the xref:../../language/pages/index.adoc[language documentation].
+The Wool language supports multiple choice actions, text input, variables, and conditionals. For a full specification, see the xref:definitions:wool-language.adoc[WOOL Language Documentation].
 
 The editor also supports HTML tags in the text, for example you can use <p> for a paragraph break or <b> ... </b> for boldface text.
 

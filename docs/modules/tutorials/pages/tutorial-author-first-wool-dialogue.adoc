@@ -45,7 +45,7 @@ image::authoring-first-dialogue-4.png[]
 
 == Start writing
 
-Once you have set up the new dialogue file, you can start writing your dialogue. The xref:../../language/pages/index.adoc[WOOL Language Documentation] provides an overview of the available language features, but we will discuss the very basics below.
+Once you have set up the new dialogue file, you can start writing your dialogue. The xref:definitions:wool-language.adoc[WOOL Language Documentation] provides an overview of the available language features, but we will discuss the very basics below.
 Your window should show a dialogue step (node) with the name +Start+. In a WOOL dialogue, each dialogue step can contain something that one agent says and one or more response options for the user.
 If you double click the +Start+ node, the editing overlay will be shown. In this overlay, you can fill in the name of the agent (speaker), and this specific node (in this case automatically called +Start+).
 
