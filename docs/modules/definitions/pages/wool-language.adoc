@@ -28,8 +28,6 @@ The header consists of a series of lines, each with a +\{key: value\}+-pair. The
 * +title+ -- a String that uniquely identifies this _Node_ within this WOOL dialogue.
 * +speaker+ -- a String that defines the name of the _Agent_ speaking in this _Node_.
 
-
-[icon="./images/icons/head-yellow.png"]
 NOTE: This is a major difference from Yarn. In WOOL, each node represents a single step in a dialogue, and thus belongs to a single speaker (whereas Yarn allows multiple speakers and statements in the same Node).
 
 You are free to define other key-value pairs that might serve as meta-data in your application. The WOOL Editor uses the following additional ones:
@@ -95,11 +93,19 @@ If you want to document your WOOL scripts with comments, WOOL Supports line-comm
 
 [source,xml]
 ----
-Robin: Thank you very much. // Thank the user for the gift.
+Thank you very much. // Thank the user for the gift.
 
 // If it was a nice gift...
 <<if $giftNice >>
    ...
+----
+
+Pay attention when including hyperlinks in your text (e.g. https://www.woolplatform.eu) - in this case, the first forward-slash should be escaped, as follows:
+
+[source,xml]
+----
+Please visit https:\//www.woolplatform.eu for more information! // Comment goes here.
+...
 ----
 
 == WOOL Dialogues
@@ -154,7 +160,6 @@ Do you have any other questions?
 
 Unlike the "__Start__" *Node*, the "__End__" *Node* is not mandatory to include in your WOOL Dialogue, as there are other ways to end the conversation. There is also nothing stopping you from creating a dialogue that can only loop indefinitely. When creating WOOL-based applications, you can also choose to provide a User Interface element that can "cancel" a dialogue at any time.
 
-[icon="./images/icons/head-yellow.png"]
 NOTE: The node with the Title "End" is thus treated as a special case. When other nodes refer to it, this Node should be created in the dialogue as usual, however its contents must be empty. When the "End" node is reached in a WOOL Dialogue, the application should simply "close" the conversation. The special meaning of Nodes titled "Start" and "End" is different from Yarn, and are marked as such in the WOOL Editor.
 
 == WOOL Statements
